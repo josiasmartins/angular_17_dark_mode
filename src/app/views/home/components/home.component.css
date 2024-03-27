@@ -2,9 +2,9 @@
     text-align: center;
     margin: 20px;
     padding: 20px;
-    background-color: var(--secondary-container-bg);
+    /* background-color: var(--secondary-container-bg); */
     border-radius: 20px;
-    border: 2px dashed var(--primary-container-bg);
+    border: 3px dashed var(--secondary-container-bg);
 }
 
 .title-home {

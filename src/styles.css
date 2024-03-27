@@ -14,7 +14,7 @@
 
 .dark_mode {
     /* text */
-    --primary--text-color: black;
+    --primary--text-color: white;
     --secondary--text-color: white;
 
     /* container */
