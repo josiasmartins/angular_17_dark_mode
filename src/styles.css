@@ -1,6 +1,7 @@
 :root {
     /* text */
     --primary--text-color: black;
+    --secondary--text-color: black;
 
     /* container */
     --primary-container-bg: white;
@@ -14,6 +15,7 @@
 .dark_mode {
     /* text */
     --primary--text-color: black;
+    --secondary--text-color: white;
 
     /* container */
     --primary-container-bg: black;
