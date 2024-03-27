@@ -1,13 +1,26 @@
 :root {
-    --primary-color: black;
+    /* text */
+    --primary--text-color: black;
+
+    /* container */
     --primary-background: white;
+    --secondary-container-bg: #4600ff52;
+    
+    /* button */
     --primary-button: purple;
-    --secondary-button: white
+    --secondary-button: blue;
 }
 
 .dark_mode {
-    --primary-color: white;
-    --primary-background: gray;
+    /* text */
+    --primary--text-color: white;
+
+    /* container */
+    --primary-background: black;
+    --secondary-container-bg: rgba(241, 234, 234, 0.638);
+
+    
+    /* button */
     --primary-button: purple;
     --secondary-button: red;
 }

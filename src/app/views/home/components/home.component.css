@@ -1,3 +1,16 @@
 .home {
-    color: var(--primary-color);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--secondary-container-bg);
+    border-radius: 20px;
+    border: 2px dashed var(--primary-background);
+}
+
+.title-home {
+    color: var(--primary--text-color);
+}
+
+.button-home {
+    background-color: var(--secondary-button);
 }
