@@ -4,7 +4,7 @@
     padding: 20px;
     background-color: var(--secondary-container-bg);
     border-radius: 20px;
-    border: 2px dashed var(--primary-background);
+    border: 2px dashed var(--primary-container-bg);
 }
 
 .title-home {

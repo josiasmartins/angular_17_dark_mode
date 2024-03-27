@@ -3,7 +3,7 @@
     --primary--text-color: black;
 
     /* container */
-    --primary-background: white;
+    --primary-container-bg: white;
     --secondary-container-bg: #4600ff52;
     
     /* button */
@@ -13,11 +13,11 @@
 
 .dark_mode {
     /* text */
-    --primary--text-color: white;
+    --primary--text-color: black;
 
     /* container */
-    --primary-background: black;
-    --secondary-container-bg: rgba(241, 234, 234, 0.638);
+    --primary-container-bg: black;
+    --secondary-container-bg: white;
 
     
     /* button */
@@ -27,5 +27,5 @@
 
 
 body {
-    background-color: var(--primary-background);
+    background-color: var(--primary-container-bg);
 }
