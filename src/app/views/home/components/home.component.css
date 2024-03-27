@@ -11,6 +11,37 @@
     color: var(--primary--text-color);
 }
 
+.button {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: ce;
+}
+
 .button-home {
     background-color: var(--secondary-button);
+    border-radius: 10px;
+    width: 30%;
+    height: 30px;
+    border: none;
+    color: var(--primary--text-color);
+}
+
+.button-home:hover {
+    background: transparent;
+    border: 1px solid var(--secondary-button);
+}
+
+.button-secondary {
+    background-color: var(--primary-button);
+    border-radius: 10px;
+    color: var(--primary--text-color);
+    width: 30%;
+    height: 30px;
+    border: 1px solid var(--secondary-button)
+}
+
+.button-secondary:hover {
+    background-color: var(--secondary-button);
+    border: none;
 }

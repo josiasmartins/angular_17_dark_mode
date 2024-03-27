@@ -8,7 +8,7 @@
     --secondary-container-bg: #4600ff52;
     
     /* button */
-    --primary-button: purple;
+    --primary-button: transparent;
     --secondary-button: blue;
 }
 
@@ -23,7 +23,7 @@
 
     
     /* button */
-    --primary-button: purple;
+    --primary-button: transparent;
     --secondary-button: red;
 }
 
