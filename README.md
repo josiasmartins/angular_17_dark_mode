@@ -1,6 +1,6 @@
 # Angular Dark mode
 
-## Steps migrar para o jest
+## Steps para migrar para o jest
 
 #### Remover as dependencias do jasmine
 ```bash
