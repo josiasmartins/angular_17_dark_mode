@@ -59,7 +59,6 @@ module.exports = {
       "jest", "node"
     ]
   },
-  // "module": "commonjs",
   "files": ["src/setup.jest.ts", "src/polyfills.ts"],
   "include": [
     "src/**/*.spec.ts",
