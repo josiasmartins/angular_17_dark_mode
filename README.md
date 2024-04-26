@@ -10,7 +10,6 @@ npm uninstall karma karma-chrome-launcher karma-coverage-istanbul-reporter karma
 #### Adicionar o jest e babel para converter seu codigo
 ```bash
 npm install --save-dev babel-jest --legacy-peer-deps
-
 ```
 
 #### No angular.json, remover o campo test
