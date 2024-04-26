@@ -10,6 +10,8 @@ npm uninstall karma karma-chrome-launcher karma-coverage-istanbul-reporter karma
 #### Adicionar o jest e o @types/jest para ter autocomplete e jest-preset-angular para facilitar as configurações em projeto angular
 ```bash
 npm install --save-dev @types/jest jest jest-preset-angular
+
+# se der incompatibilidade de versões, use com --legacy-peer-deps
 ```
 
 #### No angular.json, remover o campo test
