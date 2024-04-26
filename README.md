@@ -65,3 +65,16 @@ module.exports = {
   ]
 }
 ```
+
+#### Alterar/criar o script do package.json
+
+```json
+{
+  ...,
+  "script": {
+    ...,
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  }
+}
+```
