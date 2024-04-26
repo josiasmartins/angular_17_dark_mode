@@ -31,3 +31,8 @@
 body {
     background-color: var(--primary-container-bg);
 }
+
+
+.modal-dialog {
+    border: 3px solid blueviolet;
+}
