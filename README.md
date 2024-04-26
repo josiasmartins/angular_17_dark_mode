@@ -7,9 +7,9 @@
 npm uninstall karma karma-chrome-launcher karma-coverage-istanbul-reporter karma-jasmine karma-jasmine-html-reporter @types/jasmine @types/jasminewd2 jasmine-core jasmine-spec-reporter
 ```
 
-#### Adicionar o jest e babel para converter seu codigo
+#### Adicionar o jest e o @types/jest para ter autocomplete e jest-preset-angular para facilitar as configurações em projeto angular
 ```bash
-npm install --save-dev babel-jest --legacy-peer-deps
+npm install --save-dev @types/jest jest jest-preset-angular
 ```
 
 #### No angular.json, remover o campo test
@@ -19,6 +19,32 @@ npm install --save-dev babel-jest --legacy-peer-deps
         "test": {....}
     }
 ```
+
+#### Criar um arquivo **setup.jest.ts** dentro da pasta src
+```ts
+import "jest-preset-angular/setup-jest";
+
+```
+
+#### Criar o arquivo **jest.config.js** na raiz do projeto com a seguinte configuração:
+
+```js
+module.exports = {
+    preset: "jest-preset-angular",
+    setupFilesAfterEnv: ['<rootDir>/src/setup.jest.ts'],
+    testPathIgnorePatterns: [
+        "<rootDir>/node_modules",
+        "<rootDir>/dist"
+    ],
+    globals: {
+        "ts-jest": {
+            tsConfig: "<rootDir>/tsconfig.spec.json",
+            stringifyContentPathRegex: "\\.html$"
+        }
+    }    
+}
+```
+
 
 #### Alterar o tsconfig.spec.ts para:
 ```js
@@ -32,25 +58,10 @@ npm install --save-dev babel-jest --legacy-peer-deps
     ]
   },
   // "module": "commonjs",
-  "files": ["src/app/setup.jest.ts"],
+  "files": ["src/setup.jest.ts", "src/polyfills.ts"],
   "include": [
     "src/**/*.spec.ts",
     "src/**/*.d.ts"
   ]
-}
-
-```
-
-#### Criar o arquivo **jest.config.js**, com a seguinte configuração:
-
-```js
-module.exports = {
-    preset: "jest-preset-angular",
-    setupFilesAfterEnv: ['<rootDir>/src/app/setup.jest.ts'],
-        // '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
-    transform: {
-        '^.+\\.(ts|tsx)$': 'ts-jest',
-    }
-      
 }
 ```
