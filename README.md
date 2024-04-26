@@ -5,6 +5,11 @@
 #### Remover as dependencias do jasmine
 ```bash
 npm uninstall karma karma-chrome-launcher karma-coverage-istanbul-reporter karma-jasmine karma-jasmine-html-reporter @types/jasmine @types/jasminewd2 jasmine-core jasmine-spec-reporter
+```
+
+#### Adicionar o jest e babel para converter seu codigo
+```bash
+npm install --save-dev babel-jest --legacy-peer-deps
 
 ```
 
